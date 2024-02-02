@@ -9,8 +9,6 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Chip from "@mui/material/Chip";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import CustomSlideEmpresas from "../../components/CustomSlideEmpresas";
 
 // TODO
@@ -22,10 +20,12 @@ export default function Home() {
   
 
   // TODO  Integrar com API https://api.adviceslip.com/advice
-const conselhoDoDia ="Beba muita água"
+const conselhoDoDia ="If you can't do anything about it, there's no point in worrying about it."
   const fraseMotivacionalRandomCard = (
     <React.Fragment>
+      
       <CardContent>
+        
         <Typography variant="h5" component="div">
           Conselho do dia
         </Typography>
@@ -36,22 +36,28 @@ const conselhoDoDia ="Beba muita água"
         
       </CardContent>
       <CardActions>
-        <Button size="small">Como são gerados os conselhos aqui?</Button>
+        <Button size="small">Como são gerados os conselhos aqui? Explicar sobre api</Button>
       </CardActions>
     </React.Fragment>
   );
 
-  const content = "If you can't do anything about it, there's no point in worrying about it."
+  const content = "Teste divider"
   return (
     <>
-
-
 
 
    
       <Grid xs={12} display="flex" justifyContent="space-between" alignItems="center">
       
-        <Box sx={{ width: '100%', height:'600px', backgroundColor:'purple'}}>BACKGROUND
+        <Box sx={{ width: '100%', height:'600px', backgroundColor:'#2B3080'}}>
+        <Typography variant="h2" component="h2" sx={{mt: "10%"}}>
+        GABRIEL
+      
+      </Typography>
+      <Typography variant="h4" component="h2" sx={{ml: "10%"}}>
+         V I E I R A
+      
+      </Typography>
           <Card style={{ width: "20rem" }}>{fraseMotivacionalRandomCard}</Card>
         </Box>
         

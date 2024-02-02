@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from '../pages/home/Home';
 import Contato from '../pages/contato/Contato';
+import ProjetosPessoais from '../pages/projetos-pessoais/ProjetosPessoais';
 
 
 export const AppRoutes = () => {
@@ -16,7 +17,8 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/home" element={<Home></Home>} />
-      <Route path="/contato" element={<Contato></Contato>} />
+      <Route path="/contact" element={<Contato></Contato>} />
+      <Route path="/my-projects" element={<ProjetosPessoais></ProjetosPessoais>} />
       {/* <Route path="/login" element={<Login></Login>} />
       <Route path="/register" element={<Register></Register>} /> */}
       {/* TODO <Route path="/erro" element={<ErrorPage></ErrorPage>} /> */}
