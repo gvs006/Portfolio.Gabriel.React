@@ -18,31 +18,27 @@ export default function CustomSlideEmpresas() {
           sx={{
             width: "100%",
             marginLeft: "auto",
-           flexDirection: "row",
+            flexDirection: "row",
             marginRight: "auto",
             display: "flex",
             justifyContent: "space-between",
             paddingLeft: "16px",
             paddingRight: "16px",
-            border: "1px solid black"
+            border: "1px solid black",
           }}
         >
-
-
-          <Grid xs={6} sm={4} md={2}>SAFRA</Grid>
-          <Grid xs={6} sm={4} md={2}>EINSTEIN</Grid>
-          <Grid xs={6} sm={4} md={2}>FPB</Grid>
-          <Grid xs={6} sm={4} md={2}>ESFERA</Grid>
-
-
-
-
-
-
-
-
-
-
+          <Grid xs={6} sm={4} md={2}>
+            SAFRA
+          </Grid>
+          <Grid xs={6} sm={4} md={2}>
+            EINSTEIN
+          </Grid>
+          <Grid xs={6} sm={4} md={2}>
+            FPB
+          </Grid>
+          <Grid xs={6} sm={4} md={2}>
+            ESFERA
+          </Grid>
         </Container>
       </Box>
     </React.Fragment>
