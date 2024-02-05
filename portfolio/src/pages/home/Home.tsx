@@ -12,7 +12,10 @@ import CustomSlideEmpresas from "../../components/CustomSlideEmpresas";
 import mainBg from "../../assets/main-bg.jpg";
 import logo from "../../assets/logo.jpg";
 import "./styles.css";
-
+import Footer from "../../components/Footer";
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
+import InfoIcon from '@mui/icons-material/Info';
 
 export default function Home() {
   // TODO  Integrar com API https://api.adviceslip.com/advice
@@ -36,7 +39,6 @@ export default function Home() {
   return (
     <>
       
-          
 
           <Grid
           md={6}
@@ -46,9 +48,9 @@ export default function Home() {
             alignItems="center"
           >
             <Typography
-              variant="h3"
-              component="h3"
-              sx={{ color: "#06B9FD" }}
+              variant="h2"
+              component="h2"
+              sx={{ color: "#06B9FD", fontWeight:"bolder" }}
             >
               GABRIEL
             </Typography>
@@ -59,18 +61,19 @@ export default function Home() {
           md={6}
             container
             direction="row"
-            justifyContent="center"
-            alignItems="center">
-          <Typography variant="h5" component="h5">
+            justifyContent="center">
+          <Typography variant="h4" component="h4" sx={{color: "var(--fontcolorlight)", fontWeight:"100"}}>
               V I E I R A
             </Typography>
           </Grid>
 
-          {/* CONSELHO DO DIA */}
-
-          {/* <Card
+          <Grid
+          md={6}
+            justifyContent="end"
+          >
+          <Card
             style={{
-              width: "20rem",
+              width: "auto",
               backgroundColor: "#ffffff0",       
             }}
           >
@@ -80,12 +83,15 @@ export default function Home() {
               </IconButton>
             </Tooltip>
             {cardMotivational}
-          </Card> */}
+          </Card>
+          </Grid>
+
+         
 
 
           <Grid md={12}>
-
-          <CustomSlideEmpresas></CustomSlideEmpresas>
+<Footer></Footer>
+          
           </Grid>
 
 

@@ -7,16 +7,19 @@ export default function CustomSlideEmpresas() {
   return (
     <React.Fragment>
       <Box
+      className={"footer"}
         sx={{
+          alignItems:"center",
           paddingTop: "96px",
           paddingBottom: "96px",
           backgroundColor: "transparent",
           overflow: "hidden",
+          width:"100%"
         }}
       >
         <Container
           sx={{
-            width: "100%",
+            width: "90%",
             marginLeft: "auto",
             flexDirection: "row",
             marginRight: "auto",

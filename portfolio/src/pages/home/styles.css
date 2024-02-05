@@ -11,6 +11,7 @@
   --font1: "Open Sans", sans-serif;
   --font2: "Roboto", sans-serif;
   --fontcolorlight: #D3DDD0;
+  --fontcolor: #06B9FD;
 }
 
 /* HEADER */
@@ -23,7 +24,7 @@
 	content: "";
 	width: 0;
 	height: 2px;
-	background: #fff;
+	background: #D3DDD0;
 	transition: width .3s;
 }
 
@@ -40,6 +41,13 @@
   
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
 
 
