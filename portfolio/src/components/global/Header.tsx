@@ -3,6 +3,10 @@ import Grid from "@mui/material/Grid";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import "../../pages/home/styles.css";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
 
 export default function Header() {
   //   const [isTabSelected, setIsTabSelected] = useState<boolean>(true);
@@ -21,29 +25,27 @@ export default function Header() {
   return (
     <>
     <Grid
-          xs={12}
           display="flex"
           justifyContent="center"
           alignItems="center"
         >
-      <Box sx={{ color: "var(--fontcolorlight)"}}>
-        
+      
+      <AppBar position="static" sx={{borderRadius:"2%",backgroundColor:"inherit", color: "var(--fontcolorlight)", marginBottom: "60px", marginTop:"40px", width:"auto"}}>
+        <Toolbar>
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="disabled tabs example"
           >
-            <Tab className="animateTab" label="HOME" href={`/`} sx={{ color: "var(--fontcolorlight)"}}/>
+            <Tab className="animateTab" label="HOME" href={`/`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}}/>
             {menuPoint}
-            <Tab className="animateTab" label="PROJETOS PESSOAIS" href={`/my-projects`} sx={{ color: "var(--fontcolorlight)"}} />
+            <Tab className="animateTab" label="PORTFÓLIO" href={`/my-projects`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}} />
             {menuPoint}
-            <Tab className="animateTab" label="SOBRE" href={`/contact`} sx={{ color: "var(--fontcolorlight)"}} />
+            <Tab className="animateTab" label="SOBRE" href={`/contact`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}} />
             {menuPoint}
           </Tabs>
-          
-
-        
-      </Box>
+        </Toolbar>
+      </AppBar>
       </Grid>
 
       

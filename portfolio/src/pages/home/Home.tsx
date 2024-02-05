@@ -24,23 +24,23 @@ export default function Home() {
     "If you can't do anything about it, there's no point in worrying about it.";
   const cardMotivational = (
     <React.Fragment>
-      <CardContent>
-        <Typography variant="h5" component="div">
+      <CardContent>              
+        <Typography variant="h5" component="div" textTransform={"uppercase"} color="var(--fontcolorlight)" textAlign={"center"} gutterBottom>
           Conselho do dia
         </Typography>
 
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
           {conselhoDoDia}
         </Typography>
       </CardContent>
     </React.Fragment>
   );
 
-  const content = "Teste divider";
+  
   return (
     <>
       
-          <Header></Header>
+          
 
           <Grid
           md={6}
@@ -72,35 +72,28 @@ export default function Home() {
 
           {/* CONSELHO DO DIA */}
 
-          <Card
+          {/* <Card
             style={{
               width: "20rem",
-              backgroundColor: "#ffffff0F",
-              visibility: "hidden",
+              backgroundColor: "#ffffff0",       
             }}
           >
-            <Tooltip title="Delete">
+            <Tooltip title="Saiba mais">
               <IconButton>
                 <InfoIcon />
               </IconButton>
             </Tooltip>
             {cardMotivational}
-          </Card>
+          </Card> */}
+
+
+          <Grid md={12}>
 
           <CustomSlideEmpresas></CustomSlideEmpresas>
+          </Grid>
 
 
-        {/* <Box>
-     
 
-  <Divider>CENTER</Divider>
-  {content}
-  <Divider textAlign="left">LEFT</Divider>
-  {content}
-  <Divider>
-    <Chip label="Chip" size="small" />
-  </Divider>
-      </Box> */}
       
     </>
   );
