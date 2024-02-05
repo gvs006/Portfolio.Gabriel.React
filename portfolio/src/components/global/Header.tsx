@@ -5,8 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import "../../pages/home/styles.css";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
+import logo from "../../assets/logo.jpg";
 
 export default function Header() {
   //   const [isTabSelected, setIsTabSelected] = useState<boolean>(true);
@@ -37,6 +36,8 @@ export default function Header() {
             onChange={handleChange}
             aria-label="disabled tabs example"
           >
+
+            
             <Tab className="animateTab" label="HOME" href={`/`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}}/>
             {menuPoint}
             <Tab className="animateTab" label="PORTFÓLIO" href={`/my-projects`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}} />

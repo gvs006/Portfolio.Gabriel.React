@@ -13,6 +13,7 @@
   --fontcolorlight: #D3DDD0;
 }
 
+/* HEADER */
 .animateTab {
 	display: inline-block;
 	color: #fff;
@@ -29,6 +30,17 @@
 .animateTab:hover::after {
 	width: 100%;
 }
+
+.ads-logo{
+  border-radius: 50%;
+  margin-right: 20px;
+  background-image: url("../../assets/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+
 
 
 

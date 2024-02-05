@@ -12,11 +12,7 @@ import CustomSlideEmpresas from "../../components/CustomSlideEmpresas";
 import mainBg from "../../assets/main-bg.jpg";
 import logo from "../../assets/logo.jpg";
 import "./styles.css";
-import IconButton from "@mui/material/IconButton";
-import Tooltip from "@mui/material/Tooltip";
-import InfoIcon from "@mui/icons-material/Info";
-import Header from "../../components/global/Header";
-// TODO
+
 
 export default function Home() {
   // TODO  Integrar com API https://api.adviceslip.com/advice
@@ -52,7 +48,7 @@ export default function Home() {
             <Typography
               variant="h3"
               component="h3"
-              sx={{ color: "var(--fontcolorlight)" }}
+              sx={{ color: "#06B9FD" }}
             >
               GABRIEL
             </Typography>
