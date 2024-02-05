@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
+import "../../pages/home/styles.css";
 
 export default function Header() {
   //   const [isTabSelected, setIsTabSelected] = useState<boolean>(true);
@@ -24,20 +25,19 @@ export default function Header() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          sx={{backgroundColor:"#A1A2B2"}}
         >
-      <Box>
+      <Box sx={{ color: "var(--fontcolorlight)"}}>
         
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="disabled tabs example"
           >
-            <Tab label="HOME" href={`/`}/>
+            <Tab className="animateTab" label="HOME" href={`/`} sx={{ color: "var(--fontcolorlight)"}}/>
             {menuPoint}
-            <Tab label="PROJETOS PESSOAIS" href={`/my-projects`} />
+            <Tab className="animateTab" label="PROJETOS PESSOAIS" href={`/my-projects`} sx={{ color: "var(--fontcolorlight)"}} />
             {menuPoint}
-            <Tab label="CONTATO" href={`/contact`} />
+            <Tab className="animateTab" label="SOBRE" href={`/contact`} sx={{ color: "var(--fontcolorlight)"}} />
             {menuPoint}
           </Tabs>
           

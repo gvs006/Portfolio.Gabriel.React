@@ -1,8 +1,5 @@
 
-
-   $font1: "Open Sans", sans-serif;
-   
-/* LIGHT */
+  /* LIGHT */
 :root {
   --light: #ffffff;
   --light2: #ECEDF9;
@@ -12,15 +9,25 @@
   --pagetext: #000;
   --links: #000;
   --font1: "Open Sans", sans-serif;
+  --font2: "Roboto", sans-serif;
+  --fontcolorlight: #D3DDD0;
 }
 
-/* DARK */
-:root {
-  --dark: #000;
-  --dark-primary: #2B3080;
-  --dark-button: #191D4D;
-  --buttontext: #fff;
-  --font1: "Open Sans", sans-serif;
+.animateTab {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+.animateTab::after {
+	content: "";
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s;
+}
+
+.animateTab:hover::after {
+	width: 100%;
 }
 
 

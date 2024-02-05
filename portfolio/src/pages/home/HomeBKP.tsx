@@ -15,7 +15,6 @@ import "./styles.css";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import InfoIcon from "@mui/icons-material/Info";
-import Header from "../../components/global/Header";
 // TODO
 
 export default function Home() {
@@ -33,52 +32,39 @@ export default function Home() {
           {conselhoDoDia}
         </Typography>
       </CardContent>
+ 
     </React.Fragment>
   );
 
   const content = "Teste divider";
   return (
     <>
-      
-          <Header></Header>
-
-          <Grid
-          md={6}
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
+      <Grid
+        xs={12}
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <Box
+          sx={{
+            width: "100%",
+            height: "70vh",
+            background:
+              "linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(25,107,245,1) 68%, rgba(2,0,36,1) 100%)",
+            textAlign: "center",
+          }}
+        >
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{ color: "var(--fontcolorlight)", mt: "10%" }}
           >
-            <Typography
-              variant="h3"
-              component="h3"
-              sx={{ color: "var(--fontcolorlight)" }}
-            >
-              GABRIEL
-            </Typography>
-            
-          </Grid>
-
-          <Grid
-          md={6}
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center">
-          <Typography variant="h5" component="h5">
-              V I E I R A
-            </Typography>
-          </Grid>
-
-          {/* CONSELHO DO DIA */}
-
-          <Card
-            style={{
-              width: "20rem",
-              backgroundColor: "#ffffff0F",
-              visibility: "hidden",
-            }}
-          >
+            GABRIEL
+          </Typography>
+          <Typography variant="h4" component="h2" sx={{ ml: "10%" }}>
+            V I E I R A
+          </Typography>
+          <Card style={{ position: "absolute", width: "20rem", backgroundColor:"#ffffff8" }}>
             <Tooltip title="Delete">
               <IconButton>
                 <InfoIcon />
@@ -86,9 +72,7 @@ export default function Home() {
             </Tooltip>
             {cardMotivational}
           </Card>
-
-          <CustomSlideEmpresas></CustomSlideEmpresas>
-
+        </Box>
 
         {/* <Box>
      
@@ -101,7 +85,9 @@ export default function Home() {
     <Chip label="Chip" size="small" />
   </Divider>
       </Box> */}
-      
+      </Grid>
+
+      <CustomSlideEmpresas></CustomSlideEmpresas>
     </>
   );
 }
