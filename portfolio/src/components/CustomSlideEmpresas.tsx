@@ -15,7 +15,7 @@ export default function CustomSlideEmpresas() {
           paddingBottom: "96px",
           backgroundColor: "transparent",
           overflow: "hidden",
-          width:"100%"
+          width:"100%",
         }}
       >
         <Container

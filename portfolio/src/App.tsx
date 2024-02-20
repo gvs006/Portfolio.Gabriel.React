@@ -24,13 +24,14 @@ function App() {
             
         }}
       >
+        <Box className="waves"> </Box>
         <Header></Header>
         
         <Grid xs={6}  justifyContent="space-evenly"></Grid>
 
         <Grid xs={6} alignSelf={"right"}>
           
-        <Box className="waves"></Box>
+        
         
 
         <BrowserRouter>
@@ -39,7 +40,7 @@ function App() {
 
         </Grid>
         
-        
+       
       </Box>
     </Grid>
   );
