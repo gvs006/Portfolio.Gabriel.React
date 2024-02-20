@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Chip from "@mui/material/Chip";
 import Tab from "@mui/material/Tab";
+import "./styles.css"
 
 // TODO
 const menuPoint = (

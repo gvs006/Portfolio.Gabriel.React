@@ -3,29 +3,43 @@ import { AppRoutes } from "./routes";
 import Header from "./components/global/Header";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import "./styles/styles.css";
 
 // TODO REMOVAL
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <></>,
   },
 ]);
 function App() {
   return (
-    <Grid xs={12} alignItems="center">
+    <Grid xs={12} container>
       <Box
         sx={{
           width: "100%",
           height: "100vh",
           background:
             "linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(25,107,245,1) 68%, rgba(2,0,36,1) 100%)",
+            
         }}
       >
         <Header></Header>
+        
+        <Grid xs={6}  justifyContent="space-evenly"></Grid>
+
+        <Grid xs={6} alignSelf={"right"}>
+          
+        <Box className="waves"></Box>
+        
+
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
+
+        </Grid>
+        
+        
       </Box>
     </Grid>
   );

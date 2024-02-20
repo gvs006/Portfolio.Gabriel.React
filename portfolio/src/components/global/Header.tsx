@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import "../../pages/home/styles.css";
+import "../../styles/styles.css";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar/Toolbar";
 import logo from "../../assets/logo.jpg";
@@ -23,13 +23,13 @@ export default function Header() {
   }
   return (
     <>
-    <Grid
+    <Grid container
           display="flex"
           justifyContent="center"
           alignItems="center"
         >
       
-      <AppBar position="static" sx={{borderRadius:"2%",backgroundColor:"inherit", color: "var(--fontcolorlight)", marginBottom: "60px", marginTop:"40px", width:"auto"}}>
+      <AppBar position="static" sx={{borderRadius:"5%",backgroundColor:"inherit", color: "var(--fontcolorlight)", marginBottom: "30px", marginTop:"30px", width:"auto"}}>
         <Toolbar>
           <Tabs
             value={value}
@@ -38,11 +38,11 @@ export default function Header() {
           >
 
             
-            <Tab className="animateTab" label="HOME" href={`/`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}}/>
+            <Tab className="animateTab" label="HOME" href={`/`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.1rem"}}/>
             {menuPoint}
-            <Tab className="animateTab" label="PORTFÓLIO" href={`/my-projects`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}} />
+            <Tab className="animateTab" label="PORTFÓLIO" href={`/my-projects`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.1rem"}} />
             {menuPoint}
-            <Tab className="animateTab" label="SOBRE" href={`/contact`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.2rem"}} />
+            <Tab className="animateTab" label="SOBRE" href={`/contact`} sx={{ color: "var(--fontcolorlight)", fontSize: "1.1rem"}} />
             {menuPoint}
           </Tabs>
         </Toolbar>

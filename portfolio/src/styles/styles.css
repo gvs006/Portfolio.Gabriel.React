@@ -32,14 +32,7 @@
 	width: 100%;
 }
 
-.ads-logo{
-  border-radius: 50%;
-  margin-right: 20px;
-  background-image: url("../../assets/logo.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  
-}
+
 
 .footer {
   position: fixed;
@@ -47,27 +40,40 @@
   bottom: 0;
   width: 100%;
   text-align: center;
+  z-index: 5;
+}
+
+.waves {
+  flex-grow: "1";
+  opacity: 0.4;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  background-image: url("../assets/bg-absolut.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  z-index: 1;
+
 }
 
 
-
-
-
-   /* // Small devices (landscape phones, 576px and up)
+    /* Small devices (landscape phones, 576px and up) */
    @media (min-width: 576px) {
+    
    
     }
    
-   // Medium devices (tablets, 768px and up)
+   /* Medium devices (tablets, 768px and up) */
    @media (min-width: 768px) {
    }
    
-   // Large devices (desktops, 992px and up)
+   /* // Large devices (desktops, 992px and up) */
    @media (min-width: 992px) {  }
    
-   // X-Large devices (large desktops, 1200px and up)
+   /* // X-Large devices (large desktops, 1200px and up) */
    @media (min-width: 1200px) {  }
    
-   // XX-Large devices (larger desktops, 1400px and up)
+   /* // XX-Large devices (larger desktops, 1400px and up) */
    @media (min-width: 1400px) {  }
-    */
+    

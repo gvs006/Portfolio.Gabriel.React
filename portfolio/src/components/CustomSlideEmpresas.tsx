@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import React from "react";
+import "./empresas.css";
 
 export default function CustomSlideEmpresas() {
   return (
@@ -30,17 +31,13 @@ export default function CustomSlideEmpresas() {
             border: "1px solid black",
           }}
         >
-          <Grid xs={6} sm={4} md={2}>
-            SAFRA
+          <Grid xs={6} sm={4} md={2} className="safra">     
           </Grid>
-          <Grid xs={6} sm={4} md={2}>
-            EINSTEIN
+          <Grid xs={6} sm={4} md={2} className="einstein">
           </Grid>
-          <Grid xs={6} sm={4} md={2}>
-            FPB
+          <Grid xs={6} sm={4} md={2} className="fpb">
           </Grid>
-          <Grid xs={6} sm={4} md={2}>
-            ESFERA
+          <Grid xs={6} sm={4} md={2} className="esfera">
           </Grid>
         </Container>
       </Box>
