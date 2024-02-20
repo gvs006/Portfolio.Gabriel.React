@@ -44,17 +44,20 @@
 }
 
 .waves {
-  flex-grow: "1";
-  opacity: 0.4;
   height: 100%;
   width: 100vw;
-  position: absolute;
-  background-image: url("../assets/bg-absolut.png");
+  position: fixed;
+  background-image: url("../assets/bg-absolut-2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   z-index: 1;
 
+}
+
+.cardMotivational {
+  width: auto;
+  background: #38262600 !important;
 }
 
 

@@ -31,13 +31,13 @@ export default function CustomSlideEmpresas() {
             border: "1px solid black",
           }}
         >
-          <Grid xs={6} sm={4} md={2} className="safra">     
+          <Grid item xs={6} sm={4} md={2} className="safra">     
           </Grid>
-          <Grid xs={6} sm={4} md={2} className="einstein">
+          <Grid item xs={6} sm={4} md={2} className="einstein">
           </Grid>
-          <Grid xs={6} sm={4} md={2} className="fpb">
+          <Grid item xs={6} sm={4} md={2} className="fpb">
           </Grid>
-          <Grid xs={6} sm={4} md={2} className="esfera">
+          <Grid item xs={6} sm={4} md={2} className="esfera">
           </Grid>
         </Container>
       </Box>

@@ -9,7 +9,7 @@ import "./styles/styles.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <></>,
+    element: <div>Hello world!</div>,
   },
 ]);
 function App() {
@@ -24,23 +24,23 @@ function App() {
             
         }}
       >
-        <Box className="waves"> </Box>
-        <Header></Header>
-        
-        <Grid xs={6}  justifyContent="space-evenly"></Grid>
-
-        <Grid xs={6} alignSelf={"right"}>
-          
+        <Box className="waves">
+        <Header></Header> 
         
         
-
+        
+        
+        
+        <Grid item xs={4} alignSelf={"right"}></Grid>
+        <Grid item xs={6}></Grid>
+        <Grid item xs={4}></Grid>
+        
+        
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
+        </Box>
 
-        </Grid>
-        
-       
       </Box>
     </Grid>
   );

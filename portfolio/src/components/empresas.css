@@ -8,7 +8,7 @@
 }
 
 .einstein{
-    background-image: url("../assets/empresas/Hosp-Albert-Einstein-Logo.jpg");
+    background-image: url("../assets/empresas/einstein.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -17,7 +17,7 @@
 }
 
 .fpb{
-    background-image: url("../assets/empresas/placeholder-fpb.jpg");
+    background-image: url("../assets/empresas/esfera.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -26,7 +26,7 @@
 }
 
 .esfera{
-    background-image: url("../assets/empresas/Hosp-Albert-Einstein-Logo.jpg");
+    background-image: url("../assets/empresas/safra.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
