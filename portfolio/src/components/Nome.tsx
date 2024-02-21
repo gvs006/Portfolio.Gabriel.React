@@ -8,7 +8,7 @@ export default function Nome() {
 
     return(
        <React.Fragment>
-<Grid xs={12} alignItems={"center"} direction={"column"} zIndex={"1"} container>
+<Grid xs={12} md={6} alignItems={"center"} direction={"column"} zIndex={"1"} container>
 
           <Grid md={6} 
           direction={"row"}>
@@ -36,6 +36,8 @@ FULLSTACK DEVELOPER
             </Typography>
 
 </Grid>
+
+
 
 
 

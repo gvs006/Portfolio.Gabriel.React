@@ -3,8 +3,18 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import React from "react";
 import "./empresas.css";
+import Typography from "@mui/material/Typography";
+import MuiImageSlider from 'mui-image-slider';
 
 export default function CustomSlideEmpresas() {
+
+  const images = [
+    '../assets/empresas/esfera.png',
+    '../assets/empresas/einstein.png',
+    '../assets/empresas/safra.png',
+    '../assets/empresas/placeholder-fpb.jpg',
+];
+
   return (
     <React.Fragment>
       <Box
@@ -12,15 +22,16 @@ export default function CustomSlideEmpresas() {
         sx={{
           alignItems:"center",
           paddingTop: "96px",
-          paddingBottom: "96px",
+          paddingBottom: "40px",
           backgroundColor: "transparent",
           overflow: "hidden",
           width:"100%",
         }}
       >
-        <Container
+        <Typography fontStyle={"italic"} fontSize={"14px"}>TRUSTED BY</Typography>
+        {/* <Container
           sx={{
-            width: "90%",
+            width: "100%",
             marginLeft: "auto",
             flexDirection: "row",
             marginRight: "auto",
@@ -28,19 +39,25 @@ export default function CustomSlideEmpresas() {
             justifyContent: "space-between",
             paddingLeft: "16px",
             paddingRight: "16px",
-            border: "1px solid black",
+            paddingTop: "30px",
           }}
         >
           <Grid item xs={6} sm={4} md={2} className="safra">     
           </Grid>
           <Grid item xs={6} sm={4} md={2} className="einstein">
           </Grid>
-          <Grid item xs={6} sm={4} md={2} className="fpb">
-          </Grid>
           <Grid item xs={6} sm={4} md={2} className="esfera">
           </Grid>
-        </Container>
+          <Grid item xs={6} sm={4} md={2} className="fpb">
+          </Grid>
+
+        </Container> */}
+
+
+
+        
       </Box>
+      <MuiImageSlider images={images}/>
     </React.Fragment>
   );
 }
