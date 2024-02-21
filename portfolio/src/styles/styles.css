@@ -1,4 +1,12 @@
-
+@font-face {
+  font-family: "San Francisco Display";
+  src:
+    local("San Francisco Display")
+    url("../assets/fonts/nome/SFPRODISPLAYBOLD.OTF") format("opentype"),
+    url("../assets/fonts/nome/SFPRODISPLAYREGULAR.OTF") format("opentype"),
+    url("../assets/fonts/nome/SFPRODISPLAYHEAVYITALIC.OTF") format("opentype"),
+    url("../assets/fonts/nome/SFPRODISPLAYLIGHTITALIC.OTF") format("opentype"),
+}
   /* LIGHT */
 :root {
   --light: #ffffff;
@@ -8,6 +16,7 @@
   --button: #0C0E26;
   --pagetext: #000;
   --links: #000;
+  --font0:"San Francisco Display", sans-serif;
   --font1: "Open Sans", sans-serif;
   --font2: "Roboto", sans-serif;
   --fontcolorlight: #D3DDD0;

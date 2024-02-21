@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import React from "react";
+import "../styles/styles.css";
 
 export default function Nome() {
 
@@ -15,7 +16,7 @@ export default function Nome() {
             <Typography
               variant="h2"
               component="h2"
-              sx={{ color: "var(--fontcolor)", fontWeight:"bolder"}}
+              sx={{ color: "var(--fontcolor)", fontFamily:"var(--font0)", fontWeight:"bolder"}}
             >
               GABRIEL
             </Typography>
@@ -26,7 +27,7 @@ export default function Nome() {
           md={6}
           direction={"row"}
           >
-          <Typography variant="h4" component="h4" sx={{color: "var(--light2)", fontWeight:"500"}}>
+          <Typography variant="h4" component="h4" sx={{color: "var(--light2)", fontFamily:"var(--font0)", fontWeight:"500"}}>
               V I E I R A
             </Typography>
           </Grid>

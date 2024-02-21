@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import React from "react";
 import "./empresas.css";
 import Typography from "@mui/material/Typography";
-import MuiImageSlider from 'mui-image-slider';
+
 
 export default function CustomSlideEmpresas() {
 
@@ -29,7 +29,7 @@ export default function CustomSlideEmpresas() {
         }}
       >
         <Typography fontStyle={"italic"} fontSize={"14px"}>TRUSTED BY</Typography>
-        {/* <Container
+        <Container
           sx={{
             width: "100%",
             marginLeft: "auto",
@@ -51,13 +51,13 @@ export default function CustomSlideEmpresas() {
           <Grid item xs={6} sm={4} md={2} className="fpb">
           </Grid>
 
-        </Container> */}
+        </Container>
 
 
 
         
       </Box>
-      <MuiImageSlider images={images}/>
+
     </React.Fragment>
   );
 }
