@@ -12,11 +12,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 10vw;   
+    width: 80%;
 }
 
 .fpb{
-    background-image: url("../assets/empresas/placeholder-fpb.jpg");
+    background-image: url("../assets/empresas/fpb.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

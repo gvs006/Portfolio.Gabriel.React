@@ -29,6 +29,7 @@ export default function CustomSlideEmpresas() {
         }}
       >
         <Typography fontStyle={"italic"} fontSize={"14px"}>TRUSTED BY</Typography>
+        
         <Container
           sx={{
             width: "100%",
